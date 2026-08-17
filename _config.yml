@@ -1,333 +1,546 @@
 ```yaml
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve -l -H localhost`. If you change this file, please restart the
-# server process.
+# This is the main configuration file for your Academic Pages website.
+# It has been customized according to Li Kaizhen's resume.
 
+# ============================================================
 # Basic Site Settings
-locale                   : "China"
-site_theme               : "default"
-title                    : "Li Kaizhen"
-title_separator          : "-"
-name                     : &name "Li Kaizhen"
-description              : &description "Li Kaizhen's academic portfolio"
-url                      : "https://academicpages.github.io"
-baseurl                  : ""
-repository               : "academicpages/academicpages.github.io"
+# ============================================================
 
+locale: "zh-CN"
+
+site_theme: "default"
+
+title: "Li Kaizhen"
+
+title_separator: "-"
+
+name: &name "Li Kaizhen"
+
+description: &description "Li Kaizhen's academic portfolio"
+
+# If you know your GitHub Pages URL, replace the empty value below.
+# Example:
+# url: "https://likaizhen-code.github.io"
+url: ""
+
+# If your repository is a project site, set baseurl accordingly.
+# For a user site, keep this empty.
+baseurl: ""
+
+# Replace this with your actual GitHub repository.
+# Example:
+# repository: "likaizhen-code/likaizhen-code.github.io"
+repository: ""
+
+
+# ============================================================
 # Site Author
+# ============================================================
+
 author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Li Kaizhen"
-  pronouns         :
-  bio              : "M.S. student in Pattern Recognition and Intelligent Systems at Shanghai University. Research interests include embodied intelligence, Sim-to-Real, reinforcement learning post-training, and deep learning."
-  location         : "Shanghai, China"
-  employer         : "Shanghai University"
-  uri              :
-  email            : "18854898855@163.com"
+
+  # Basic information
+  avatar: "profile.png"
+
+  name: "Li Kaizhen"
+
+  pronouns:
+
+  bio: "M.S. student in Pattern Recognition and Intelligent Systems at Shanghai University. Research interests include embodied intelligence, Sim-to-Real, reinforcement learning post-training, deep learning, and real-world robot deployment."
+
+  location: "Shanghai, China"
+
+  employer: "Shanghai University"
+
+  uri:
+
+  email: "18854898855@163.com"
+
 
   # Academic websites
-  academia         :
-  arxiv            :
-  googlescholar    :
-  inspire-hep      :
-  impactstory      :
-  orcid            :
-  semantic         :
-  ssrn             :
-  pubmed           :
-  researchgate     :
-  scopus           :
-  zotero           :
+  academia:
+  arxiv:
+  googlescholar:
+  inspire-hep:
+  impactstory:
+  orcid:
+  semantic:
+  ssrn:
+  pubmed:
+  researchgate:
+  scopus:
+  zotero:
+
 
   # Repositories and software development
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  github           : "likaizhen-code"
-  kaggle           :
-  stackoverflow    :
+  bitbucket:
+  codepen:
+  dribbble:
+
+  github: "likaizhen-code"
+
+  kaggle:
+  stackoverflow:
+
 
   # Social media
-  artstation       :
-  bluesky          :
-  facebook         :
-  flickr           :
-  foursquare       :
-  goodreads        :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         :
-  mastodon         :
-  medium           :
-  pinterest        :
-  soundcloud       :
-  steam            :
-  telegram         :
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  wikipedia        :
-  xing             :
-  youtube          :
-  zhihu            :
-
-# Publication Category
-publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'
-  conferences:
-    title: 'Conference Papers'
-
-# Site Settings
-teaser                   :
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
-comments:
-  provider               :
-  disqus:
-    shortname            :
-  discourse:
-    server               :
+  artstation:
+  bluesky:
   facebook:
-    appid                :
-    num_posts            :
-    colorscheme          :
+  flickr:
+  foursquare:
+  goodreads:
+  google_plus:
+  keybase:
+  instagram:
+  lastfm:
+  linkedin:
+  mastodon:
+  medium:
+  pinterest:
+  soundcloud:
+  steam:
+  telegram:
+  tumblr:
+  twitter:
+  vine:
+  weibo:
+  wikipedia:
+  xing:
+  youtube:
+  zhihu:
+
+
+# ============================================================
+# Publication Category
+# ============================================================
+
+publication_category:
+
+  books:
+    title: "Books"
+
+  manuscripts:
+    title: "Journal Articles"
+
+  conferences:
+    title: "Conference Papers"
+
+
+# ============================================================
+# Site Settings
+# ============================================================
+
+teaser:
+
+breadcrumbs: false
+
+words_per_minute: 160
+
+future: true
+
+read_more: "disabled"
+
+talkmap_link: false
+
+
+# ============================================================
+# Comments
+# ============================================================
+
+comments:
+
+  provider:
+
+  disqus:
+    shortname:
+
+  discourse:
+    server:
+
+  facebook:
+    appid:
+    num_posts: 5
+    colorscheme: "light"
+
+
+# ============================================================
+# Staticman
+# ============================================================
 
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+
+  allowedFields:
+    - "name"
+    - "email"
+    - "url"
+    - "message"
+
+  branch: "gh-pages"
+
+  commitMessage: "New comment."
+
+  filename: "comment-{@timestamp}"
+
+  format: "yml"
+
+  moderation: true
+
+  path: "_data/comments/{options.slug}"
+
+  requiredFields:
+    - "name"
+    - "email"
+    - "message"
+
   transforms:
-    email                : "md5"
+    email: "md5"
+
   generatedFields:
+
     date:
-      type               : "date"
+      type: "date"
+
       options:
-        format           : "iso8601"
+        format: "iso8601"
+
+
+# ============================================================
+# Atom Feed
+# ============================================================
 
 atom_feed:
-  hide                   : false
-  path                   :
 
+  hide: false
+
+  path:
+
+
+# ============================================================
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+# ============================================================
 
+google_site_verification:
+
+bing_site_verification:
+
+alexa_site_verification:
+
+yandex_site_verification:
+
+
+# ============================================================
 # Social Sharing
+# ============================================================
+
 twitter:
-  username               : &twitter
+
+  username:
+
+
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :
-og_description           :
+
+  username:
+
+  app_id:
+
+  publisher:
+
+
+og_image:
+
+og_description:
+
+
 social:
-  type                   : "Person"
-  name                   : "Li Kaizhen"
+
+  type: "Person"
+
+  name: "Li Kaizhen"
+
   links:
     - "https://github.com/likaizhen-code"
 
-# Analytics
-analytics:
-  provider               : "false"
-  google:
-    tracking_id          :
 
+# ============================================================
+# Analytics
+# ============================================================
+
+analytics:
+
+  provider: false
+
+  google:
+
+    tracking_id:
+
+
+# ============================================================
 # Reading Files
+# ============================================================
+
 include:
-  - .htaccess
-  - _pages
-  - files
+
+  - ".htaccess"
+  - "_pages"
+  - "files"
+
 
 exclude:
+
   - "*.sublime-project"
   - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .github
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
+  - ".asset-cache"
+  - ".bundle"
+  - ".github"
+  - ".jekyll-assets-cache"
+  - ".sass-cache"
+  - "assets/js/_main.js"
+  - "assets/js/plugins"
+  - "assets/js/vendor"
+  - "CHANGELOG"
+  - "Capfile"
+  - "config"
+  - "Dockerfile"
+  - "Gemfile"
+  - "Gruntfile.js"
+  - "gulpfile.js"
+  - "LICENSE"
+  - "local"
+  - "log"
+  - "node_modules"
+  - "package.json*"
+  - "Rakefile"
+  - "README"
+  - "tmp"
+  - "vendor"
+
 
 keep_files:
-  - .git
-  - .svn
+
+  - ".git"
+  - ".svn"
+
 
 encoding: "utf-8"
+
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+
+# ============================================================
 # Conversion
-markdown: kramdown
-highlighter: rouge
+# ============================================================
+
+markdown: "kramdown"
+
+highlighter: "rouge"
+
 lsi: false
+
 excerpt_separator: "\n\n"
+
 incremental: false
 
+
+# ============================================================
 # Markdown Processing
+# ============================================================
+
 kramdown:
-  input: GFM
+
+  input: "GFM"
+
   hard_wrap: false
+
   auto_ids: true
+
   footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
+  entity_output: "as_char"
+
+  toc_levels: "1..6"
+
+  smart_quotes: "lsquo,rsquo,ldquo,rdquo"
+
   enable_coderay: false
 
+
+# ============================================================
 # Collections
+# ============================================================
+
 collections:
+
   teaching:
     output: true
-    permalink: /:collection/:path/
+    permalink: "/:collection/:path/"
+
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: "/:collection/:path/"
+
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: "/:collection/:path/"
+
   talks:
     output: true
-    permalink: /:collection/:path/
+    permalink: "/:collection/:path/"
 
+
+# ============================================================
 # Defaults
+# ============================================================
+
 defaults:
-  # _posts
+
+  # Posts
   - scope:
       path: ""
       type: posts
+
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
 
-  # _pages
+
+  # Pages
   - scope:
       path: ""
       type: pages
+
     values:
-      layout: single
+      layout: "single"
       author_profile: true
 
-  # _teaching
+
+  # Teaching
   - scope:
       path: ""
       type: teaching
+
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       share: true
       comments: true
 
-  # _publications
+
+  # Publications
   - scope:
       path: ""
       type: publications
+
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       share: true
       comments: true
 
-  # _portfolio
+
+  # Portfolio
   - scope:
       path: ""
       type: portfolio
+
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       share: true
       comment: true
 
-  # _talks
+
+  # Talks
   - scope:
       path: ""
       type: talks
+
     values:
-      layout: talk
+      layout: "talk"
       author_profile: true
       share: true
 
-# Sass/SCSS
+
+# ============================================================
+# Sass / SCSS
+# ============================================================
+
 sass:
-  sass_dir: _sass
-  style: compressed
 
+  sass_dir: "_sass"
+
+  style: "compressed"
+
+
+# ============================================================
 # Outputting
-permalink: /:categories/:title/
-timezone: Asia/Shanghai
+# ============================================================
 
+permalink: "/:categories/:title/"
+
+timezone: "Asia/Shanghai"
+
+
+# ============================================================
 # Plugins
+# ============================================================
+
 plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
+
+  - "jekyll-feed"
+  - "jekyll-gist"
+  - "jekyll-paginate"
+  - "jekyll-sitemap"
+  - "jekyll-redirect-from"
+  - "jemoji"
+
 
 # Mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jemoji
 
+whitelist:
+
+  - "jekyll-feed"
+  - "jekyll-gist"
+  - "jekyll-paginate"
+  - "jekyll-sitemap"
+  - "jekyll-redirect-from"
+  - "jemoji"
+
+
+# ============================================================
 # Archives
+# ============================================================
+
 category_archive:
-  type: liquid
-  path: /categories/
+
+  type: "liquid"
+
+  path: "/categories/"
+
 
 tag_archive:
-  type: liquid
-  path: /tags/
 
+  type: "liquid"
+
+  path: "/tags/"
+
+
+# ============================================================
 # HTML Compression
+# ============================================================
+
 compress_html:
-  clippings: all
+
+  clippings: "all"
+
   ignore:
-    envs: development
+
+    envs:
+      - "development"
 ```
