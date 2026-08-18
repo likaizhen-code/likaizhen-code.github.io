@@ -4,9 +4,9 @@
 
 locale: "zh-CN"
 site_theme: "default"
-title: "Li Kaizhen"
+title: "Kaizhen Li"
 title_separator: "-"
-name: &name "Li Kaizhen"
+name: &name "Kaizhen Li"
 description: &description "Li Kaizhen's academic portfolio"
 
 # Set these after confirming your GitHub Pages repository.
@@ -16,9 +16,9 @@ repository: ""
 
 author:
   avatar: "profile.png"
-  name: "Li Kaizhen"
+  name: "Kaizhen Li"
   pronouns:
-  bio: "M.S. student in Pattern Recognition and Intelligent Systems at Shanghai University.."
+  bio: "M.S. student at Shanghai University.."
   location: "Shanghai, China"
   employer: "Shanghai University"
   uri:
