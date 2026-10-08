@@ -16,4 +16,6 @@ authors:
 - Dan Zhang
 - Jianjian Liu
 - Xiaowei Li#
+links:
+  arXiv: https://arxiv.org/abs/2610.00996
 ---
