@@ -1,0 +1,18 @@
+{% assign projects = site.data.profile.projects %}
+
+{% if projects %}
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-diagram-project"></i> Projects</h6>
+    <div class="px-3 pb-2">
+        {% for item in projects %}
+        <div class="media py-2 {% unless forloop.last %}border-bottom border-gray{% endunless %}">
+            <i class="fab fa-github fa-2x mr-3 text-muted mt-1"></i>
+            <div class="media-body">
+                <a class="text-body" target="_blank" href="{{ item.url }}"><strong>{{ item.name }}</strong></a>
+                <div class="small text-muted">{{ item.description }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
