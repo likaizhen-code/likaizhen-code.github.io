@@ -25,3 +25,19 @@ education:
 - name: Shanghai University
   logo: /assets/images/logos/shanghai-university.gif
   position: M.S. Student
+
+projects:
+- name: FR3
+  url: https://github.com/likaizhen-code/FR3
+  description: >-
+    MuJoCo simulation and control infrastructure for the Franka Research 3
+    robot arm.
+- name: Lerobot_hilserl
+  url: https://github.com/likaizhen-code/Lerobot_hilserl
+  description: >-
+    HIL-SERL training in the LeRobot framework with a pick-place simulation
+    scene, keyboard teleoperation, and trained weights.
+- name: Franka_hilserl
+  url: https://github.com/likaizhen-code/Franka_hilserl
+  description: >-
+    Real-robot deployment of HIL-SERL on the Franka arm using Franky.
