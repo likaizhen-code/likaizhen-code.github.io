@@ -1,0 +1,20 @@
+---
+layout: default
+title : Publications
+navbar_title: Publications
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
+
+{% assign publications = site.publications | sort: "citations" | reverse %}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="pt-4">Publications</h2>
+        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+            {% for item in publications %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

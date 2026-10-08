@@ -1,0 +1,27 @@
+primary_name: "Kaizhen Li"
+navbar_name: "Kaizhen Li"
+portrait: /assets/images/profile/profile.png
+
+positions:
+- name: M.S. Student
+- name: Shanghai University
+
+email: "18854898855@163.com"
+github: likaizhen-code
+
+short_bio_text_justify: false
+short_bio: >-
+  <p>
+    I am a Master's student at <strong>Shanghai University</strong>. My research
+    interests include Sim-to-Real, reinforcement learning post-training, deep
+    learning, and real-world robot deployment.
+  </p>
+  <p>
+    I am particularly interested in building intelligent robotic systems that
+    can move from simulation into the physical world.
+  </p>
+
+education:
+- name: Shanghai University
+  logo: /assets/images/logos/shanghai-university.gif
+  position: M.S. Student
