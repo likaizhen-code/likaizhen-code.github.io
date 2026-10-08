@@ -92,6 +92,8 @@ h1, h2, h3, h4, h5, h6,
 .profile-portrait {
     display: block;
     width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
     aspect-ratio: 1;
     object-fit: cover;
 }
